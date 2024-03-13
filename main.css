@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#window1 {
+	width:1000px;
+	height:300px;
+	border: thin solid black;
+	overflow:hidden;	
+	position:relative;
+}
+
+.animal{
+	width:10px;
+	height:10px;
+	background:black;
+	position:absolute;
+	top:-10px;
+	left:-10px;
+}
+ .manualPage{opacity:0}

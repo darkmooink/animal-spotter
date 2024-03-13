@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Animal Spotter</title>
+<link href="main.css"  rel="stylesheet" type="text/css" />
+<script src="functions.js" language="javascript"></script>
+<script src="prog1.js" language="javascript"></script>
+</head>
+
+<body>
+<div id="window1"></div>
+<button onclick="run()" id="run">Run</button><button onclick="alert(total);">show total</button><button onclick="shSettings()">show/hide settings</button>
+<form name="settings">
+<table id="settingsTable">
+<tr><td>win width</td><td><input type="text" name="width" value="1000"/></td></tr>
+<tr><td>win height</td><td><input type="text" name="height" value="300" /></td></tr>
+<tr><td>animal width</td><td><input type="text" name="widthA" value="10"/></td></tr>
+<tr><td>animal height</td><td><input type="text" name="heightA" value="10" /></td></tr>
+<tr><td>Min speed Forward</td><td><input type="text" name="minSpeedF" value="1" /></td></tr>
+<tr><td>max speed Forward</td><td><input type="text" name="maxSpeedF" value="2" /></td></tr>
+<tr><td>Min speed Sideways</td><td><input type="text" name="minSpeedS" value="1" /></td></tr>
+<tr><td>max speed Sideways</td><td><input type="text" name="maxSpeedS" value="2" /></td></tr>
+<tr><td>Min no. of objects</td><td><input type="text" name="minAnimal" value="10" /></td></tr>
+<tr><td>max no. of objects</td><td><input type="text" name="maxAnimal" value="10" /></td></tr>
+<tr><td>secs from the end the last animal can be spawned</td><td><input type="text" name="timeBuffer" value="5" /></td></tr>
+<tr><td>length in seconds</td><td><input type="text" name="length" value="20" /></td></tr>
+<tr><td>frames per second</td><td><input type="text" name="fps" value="10" /></td></tr>
+<tr><td colspan="2">Color codes, 0 is dark 256 is the lightest</br>0-256,0,0 is bright red to black</td></tr>
+<tr><td>min red</td><td><input type="text" name="minR" value="0" /></td></tr>
+<tr><td>max red</td><td><input type="text" name="maxR" value="0" /></td></tr>
+<tr><td>min green</td><td><input type="text" name="minG" value="0" /></td></tr>
+<tr><td>max green</td><td><input type="text" name="maxG" value="0" /></td></tr>
+<tr><td>min blue</td><td><input type="text" name="minB" value="0" /></td></tr>
+<tr><td>max blue</td><td><input type="text" name="maxB" value="0" /></td></tr>
+<tr><td>
+</td><td>
+<input type="button" onclick="setValues();" value="save" /></td></tr>
+<tr><td>Recording and play back</td></tr>
+<tr><td>
+<input type="text" id="recording" /></td><td><button onclick="setTimeout(document.getElementById('recording').value, 0); return false">play</button>
+</table>
+</form>
+
+</body>
+</html>
